@@ -1,0 +1,126 @@
+* {
+  /* Primary */
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  /* Neutral */
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsla(12, 88%, 59%, 0.699);
+  --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--Dark-Blue);
+  font-weight: 800;
+}
+p {
+  color: var(--Dark-Grayish-Blue);
+}
+.btn {
+  background-color: var(--Bright-Red);
+  border: unset;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: var(--Very-Pale-Red);
+  border: unset;
+}
+.btn:focus {
+  background-color: var(--Very-Pale-Red);
+  border: unset !important;
+  box-shadow: unset !important;
+}
+.badge {
+  background-color: var(--Bright-Red);
+  color: white;
+  margin-right: 10px;
+}
+
+/* main + Navabr */
+.mainnav {
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.navbar-expand-lg {
+  height: 150px;
+}
+
+.mainnav .row {
+  min-height: calc(100vh - 150px);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#different {
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.b-foot {
+  background-color: var(--Bright-Red);
+  padding: 50px 0;
+}
+.b-foot h2 {
+  color: white;
+}
+.b-foot .btn {
+  background-color: white;
+  color: var(--Bright-Red);
+  border: unset;
+  font-weight: bold;
+}
+.foot {
+  background-color: var(--Very-Dark-Blue);
+  padding: 50px 0;
+}
+.foot p {
+  color: white;
+  cursor: pointer;
+}
+.foot p:hover {
+  color: var(--Bright-Red);
+}
+.foot input:focus {
+  box-shadow: unset;
+  border-color: var(--Bright-Red);
+}
+
+@media (max-width: 768px) {
+  .bg-span {
+    background-color: hsl(13, 100%, 96%);
+    width: 100%;
+  }
+}
+
+#slider .card {
+  background-color: var(--Vary-Light-Gray);
+  border: 0;
+}
+#slider img {
+  width: 60px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
